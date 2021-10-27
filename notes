@@ -1,0 +1,17 @@
+ssh -i otdevaccesskey.pem ubuntu@52.3.248.198   
+
+http://52.3.248.198:5000/
+
+sudo mongodump --db overtone --out /var/backups/mongobackups/`date +"%m-%d-%y"`
+
+sudo mongorestore --db overtone --drop db/
+
+
+                {
+                    "$unwind": {
+                        path: "$category",
+                        preserveNullAndEmptyArrays: true
+                      }
+                 },
+                 
+                 { $sort: { mappingName: -1,_id: 1 } },

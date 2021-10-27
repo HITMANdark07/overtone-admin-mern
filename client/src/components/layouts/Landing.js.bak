@@ -1,0 +1,237 @@
+import React, { Component } from 'react'
+
+export default class Landing extends Component {
+  render() {
+    return (
+      <div className="bg-white">
+      <section id="header">
+        <div className="container">
+          <img src="images/logo.png" className="logo" />
+          <div className="header-text">
+            <h1> Re-open your restaurants<br />
+              With a contactless Menu Card.</h1>
+            <span className="square" />
+            <p>Make your restaurant a safe place to eat or grab-and-go by deploying a touch-free QR Code menu.Make your restaurant a safe place to eat or grab-and-go by deploying a touch-free QR Code menu.</p>
+            <button className="common-btn">Register Now</button>
+            {/* <button class="common-btn bg-color text-white">Learn More</button> */}
+            <div className="line">
+              <span className="line-1" /><br />
+              <span className="line-2" /><br />
+              <span className="line-3" /><br />
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav id="sideNav">
+        <ul>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#courses">COURSES</a></li>
+          <li><a href="#offer">OFFER</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" id="menuBtn" />
+      {/* ABOUT*/}
+      <section id="about">
+        <div className="about-left-col">
+          <img src="images/about.png" />
+        </div>
+        <div className="about-right-col">
+          <div className="about-text">
+            <h1>About Us</h1>
+            <span className="square" />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p><br /><br />
+            <div className="line">
+              <span className="line-1" /><br />
+              <span className="line-2" /><br />
+              <span className="line-3" /><br />
+            </div>
+            <h2>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"</h2>
+            <h3>----- Lorem Ipsum </h3>
+          </div>
+        </div>
+      </section>
+  
+      {/* features */}
+      <section id="features">
+        <h1 className="text-center">Why Contactless Menu?</h1>
+        <div className="feature-row">
+          <div className="feature-col">
+            <img src="images/feature1.png" />
+            <h4>Safety First</h4>
+            <p>Limiting the use of physical menus and promoting touchless QR Code Menus.</p>
+          </div>
+          <div className="feature-col">
+            <img src="images/feature2.svg" />
+            <h4>No app download required</h4>
+            <p>Your diners can scan the QR Code using their phone's camera</p>
+          </div>
+          <div className="feature-col">
+            <img src="images/feature3.png" />
+            <h4>Inspires the confidence to step out</h4>
+            <p>Re-align your restaurant functioning with contactless at the core.</p>
+          </div>
+        </div>
+        <div className="feature-btn">
+          <div className="line">
+            <span className="line-1" /><br />
+            <span className="line-2" /><br />
+            <span className="line-3" /><br />
+          </div>
+          <button className="common-btn">Add Your Restaurant</button>
+        </div>
+      </section>
+      {/* Courses */}
+      <section id="courses">
+        <div className="container course-row">
+          <div className="course-left-col">
+            <div className="course-text">
+              <h1>Contactless Menu</h1>
+              <span className="square" />
+              <p>A Contactless Menu, a complete digital menu of your restaurant available to the customers via a QR code placed on each table/counter. </p>
+              <div className="feature-list">
+                <h5><i className="fa fa-check-circle fa-style" /> Today Special</h5>
+                <h5><i className="fa fa-check-circle fa-style" /> Category Listing</h5>
+                <h5><i className="fa fa-check-circle fa-style" /> Offers Listing</h5>
+              </div>
+              <button className="common-btn">View Restaurants</button>
+              <div className="line">
+                <span className="line-1" /><br />
+                <span className="line-2" /><br />
+                <span className="line-3" /><br />
+              </div>
+            </div>
+          </div>
+          <div className="course-right-col">
+            <img src="images/contactless.jpg" />
+          </div>
+        </div>
+      </section>
+      {/* offer */}
+      <section id="offer">
+        <div className="about-left-col">
+          <img src="images/contactless-order.jpg" />
+        </div>
+        <div className="about-right-col">
+          <div className="about-text">
+            <h1>Contactless Order</h1>
+            <span className="square" />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <button className="common-btn">Coming Soon</button>
+            <div className="line">
+              <span className="line-1" /><br />
+              <span className="line-2" /><br />
+              <span className="line-3" /><br />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*Counter Section*/}
+      <section id="counter">   
+        <div className="counter-row">
+          <div className="counter-col">
+            <div className="counter-box">
+              <h1 className="counter-number">1000</h1>
+              <p>Restaurants</p>
+            </div>
+          </div>
+          <div className="counter-col">
+            <div className="counter-box">
+              <h1>2000</h1>
+              <p>QR-Scanned</p>
+            </div>
+          </div>
+          <div className="counter-col">
+            <div className="counter-box">
+              <h1>3000</h1>
+              <p>Food Items</p>
+            </div>
+          </div>
+          <div className="counter-col">
+            <div className="counter-box">
+              <h1>100</h1>
+              <p>Categories</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Contact */}
+      <section id="contact">
+        <div className="container contact-row">
+          <div className="contact-left-col">
+            <h1>Sign Up to Join Our Community</h1>
+            <form>
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <input type="password" placeholder="Enter password" />
+              <div className="btn-box">
+                <button className="common-btn">Sign Up</button>
+                <button className="common-btn">Start Free Trail</button>
+              </div>
+            </form>
+            <div className="line">
+              <span className="line-1" /><br />
+              <span className="line-2" /><br />
+              <span className="line-3" /><br />
+            </div>
+          </div>
+          <div className="contact-right-col">
+            <img src="images/contact-us.jpg" />
+          </div>
+        </div>
+      </section>
+      {/* footer */}
+      <section id="footer">
+        <div className="container footer-row">
+          <hr />
+          <div className="footer-left-col">
+            <div className="footer-links">
+              <div className="link-title">
+                <h4>Product</h4>
+                <small>Our Plan</small><br />
+                <small>Free Trail</small>
+              </div>
+              <div className="link-title">
+                <h4>About Us</h4>
+                <small>Request Demo</small><br />
+                <small>FAQs</small>
+              </div>
+              <div className="link-title">
+                <h4>Support</h4>
+                <small>Features</small><br />
+                <small>Contact Us</small>
+              </div>
+              <div className="link-title">
+                <h4>Explore</h4>
+                <small>Find a nonprofit</small><br />
+                <small>Corporate Solution</small>
+              </div>
+            </div>
+          </div>
+          <div className="footer-right-col">
+            <div className="footer-info">
+              <div className="copyright-text">
+                <small>support@smej.com</small><br />
+                <small>copyright 2020 SMEJ</small>
+              </div>
+              <div className="footer-logo">
+                <img src="images/logo.png" />
+                <button className="common-btn">English</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* social icons */}
+      <div className="social-icons">
+        <img src="images/facebook.png" />
+        <img src="images/instagram.png" />
+        <img src="images/twitter.png" />
+        <img src="images/linkedin.png" />
+      </div>
+    </div>
+    )
+  }
+}
